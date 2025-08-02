@@ -1,0 +1,28 @@
+
+server:
+  port: 8080
+
+spring:
+  application:
+  name: userDetails
+  datasource:
+    url: jdbc:postgresql://localhost:5432/userdb
+    username: postgres
+    password: postgres
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  jackson:
+    serialization:
+    fail-on-empty-beans: false
+
+jwt:
+  rsa:
+    public-key-location: classpath:public.pem
+    private-key-location: classpath:private.pem
+    key-id: userDetailsKey
