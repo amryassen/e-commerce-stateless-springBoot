@@ -1,1 +1,1 @@
-# This is a redme for e-commerce application
+# This is a README for e-commerce application
